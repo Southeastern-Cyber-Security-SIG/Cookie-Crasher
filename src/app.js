@@ -24,3 +24,9 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 module.exports = app;
+
+
+//make the banner visible
+app.use(express.static('views'));
+
+
