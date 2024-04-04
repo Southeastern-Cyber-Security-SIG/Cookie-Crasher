@@ -1,19 +1,68 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <title>Welcome</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
+<style>
+  body {
+    background-color: #000000;
+    color: #fff;
+  }
+  .title {
+    display: block; 
+    font-size: 55px;
+    font: Courier;
+    margin-bottom: 10px;
+  }
 
+  .lil-title {
+    display: block; 
+    color: red;
+    font-size: 45px;
+    font: Courier;
+    margin-bottom: 10px;
+  }
+
+  .para {
+    display: block; 
+    font-size: 20px;
+    font: Courier;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    padding: 20px 30px;
+    background-color: #C41E3A;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Button hover */
+  .button:hover {
+    background-color: #8B0000;
+  }
+</style>
 <body>
   <p><%= status %></p>
-  
   <form action="/login" method="post">
-    <label for="userName">Username : </label>
-    <input type="text" name="userName" id="userName">
-    <label for="userName">Password : </label>
-    <input type="password" name="password" id="password">
-    <button type="submit">Login</button>
+    <center>
+      <h1 class="title">Login</h1>
+      <h1 class="lil-title">Imposters will be arrested</h1>
+    <br />
+    <label for="userName" class="para">Username : </label>
+    <input type="text" name="userName" id="userName"><br /><br />
+    <label for="userName" class="para">Password : </label>
+    <input type="password" name="password" id="password"><br /><br />
+    <button type="submit" class="button">Login</button>
+  </center>
   </form>
 </body>
 
