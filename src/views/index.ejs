@@ -1,14 +1,72 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Welcome</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<link rel="stylesheet" href="/stylesheets/style.css">
 
+
+<style>
+  /* banner stuff */
+  .banner {
+    width: 100%;
+    height: 330px; 
+    background-image: url('secretyy.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+  }
+  body {
+    background-color: #000000;
+    color: #fff;
+  }
+  .title {
+    display: block; 
+    font-size: 55px;
+    font: Courier;
+    margin-bottom: 10px;
+  }
+
+  .para {
+    display: block; 
+    font-size: 40px;
+    font: Courier;
+    margin-bottom: 10px;
+  }
+
+  .scary-text {
+        color: red;
+        font-weight: bold;
+    }
+
+  .button {
+    padding: 20px 30px;
+    background-color: #C41E3A;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Button hover */
+  .button:hover {
+    background-color: #8B0000;
+  }
+</style>
+</head>
 <body>
-  <h1>Welcome to Secret Viewer</h1>
-  <p>login to view your secret</p>
-  <a href="/login">Login Page</a>
+  <div class="banner"></div>
+<center><TT>
+  <h1 class="title">Welcome to Secret Viewer</h1>
+  <div class = "para">
+  <p>login to view your <span class="scary-text">secret</span></p></div>
+  <a href="/login" class="button" >Login Page</a>
+</TT></center>
 </body>
 
 </html>

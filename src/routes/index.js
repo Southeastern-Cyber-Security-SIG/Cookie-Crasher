@@ -18,7 +18,7 @@ router.post('/login', function(req, res, next) {
     res.redirect(302, "/users")
     console.log("Alice has logged in")
   }else{
-    res.render('login', { status: 'Wrong Username or Password' });
+    res.render('login', { status: 'Prepare to be incarcerated' });
     console.log("Login has Failed")
   }
 });
